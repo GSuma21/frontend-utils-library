@@ -6,6 +6,9 @@
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "paths": {
+      "access-panel": [
+        "./dist/access-panel"
+      ],
       "dynamic-form": [
         "dist/dynamic-form"
       ]

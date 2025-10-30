@@ -1,0 +1,58 @@
+<div class="access-panel-overlay" [class.open]="isOpen" (click)="closePanel()">
+  <div class="access-panel" [class.open]="isOpen" (click)="$event.stopPropagation()">
+    <div class="panel-header">
+      <h2 [class.highlight-active]="settings.highlightLinks">Accessibility Options</h2>
+      <button class="close-btn" (click)="closePanel()">&times;</button>
+    </div>
+    <div class="panel-body">
+      <button class="btn-access" (click)="toggleTextToSpeech()">
+        <span class="icon">&#x1F50A;</span>
+        <span class="label">Text To Speech</span>
+      </button>
+      <button class="btn-access" (click)="changeFontSize(true)">
+        <span class="icon">&#x1F50E;</span>
+        <span class="label">Bigger Text</span>
+      </button>
+      <button class="btn-access" (click)="changeFontSize(false)">
+        <span class="icon">&#x1F50D;</span>
+        <span class="label">Small Text</span>
+      </button>
+      <button class="btn-access" (click)="changeLineHeight()">
+        <span class="icon">&#x2195;</span>
+        <span class="label">Line Height</span>
+      </button>
+      <button class="btn-access" (click)="toggleHighlightLinks()">
+        <span class="icon">&#x1F517;</span>
+        <span class="label">Highlight Links</span>
+      </button>
+      <button class="btn-access" (click)="toggleTextSpacing()">
+        <span class="icon">&#x2194;</span>
+        <span class="label">Text Spacing</span>
+      </button>
+      <button class="btn-access" (click)="toggleDyslexiaFriendly()">
+        <span class="icon">&#x1F4D6;</span>
+        <span class="label">Dyslexia Friendly</span>
+      </button>
+      <button class="btn-access" (click)="toggleHideImages()">
+        <span class="icon">&#x1F5BC;</span>
+        <span class="label">Hide Images</span>
+      </button>
+      <button class="btn-access" (click)="toggleCursor()">
+        <span class="icon">&#x2328;</span>
+        <span class="label">Cursor</span>
+      </button>
+      <button class="btn-access" (click)="toggleDarkMode()">
+        <span class="icon">&#x1F319;</span>
+        <span class="label">Light-Dark</span>
+      </button>
+      <!-- <button class="btn-access" (click)="toggleInvertColors()">
+        <span class="icon">&#x25D1;</span>
+        <span class="label">Invert Colors</span>
+      </button> -->
+    </div>
+    <div class="panel-footer">
+      <button class="reset-btn" (click)="resetAll()">Reset All Settings</button>
+      <div class="footer-text">Created by Suma</div>
+    </div>
+  </div>
+</div>

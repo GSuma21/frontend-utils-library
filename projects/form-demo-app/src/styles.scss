@@ -14,3 +14,14 @@
   position: relative;
   display: none;
 }
+
+
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+  filter: invert(100%);
+}
+
+.invert-colors {
+  filter: invert(100%);
+}

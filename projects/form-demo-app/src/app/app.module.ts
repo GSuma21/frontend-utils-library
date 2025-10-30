@@ -10,6 +10,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatButtonModule } from '@angular/material/button';
+import { AccessPanelComponent } from 'access-panel';
 
 
 
@@ -26,7 +27,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    AccessPanelComponent
   ],
   providers: [LanguageTranslatePipe],
   bootstrap: [AppComponent]

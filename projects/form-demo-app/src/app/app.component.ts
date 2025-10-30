@@ -12,6 +12,7 @@ export class AppComponent {
   @ViewChild('formLib') formLib: MainFormComponent | undefined
   language = "en"
   message = { en:"Message in english", hi: "अपना नाम दर्ज करें" }
+  showAccessibilityPanel = false;
 
   constructor(){}
 

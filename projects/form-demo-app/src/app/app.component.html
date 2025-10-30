@@ -1,11 +1,17 @@
+<button (click)="showAccessibilityPanel = !showAccessibilityPanel">Accessibility</button>
+<lib-access-panel [isOpen]="showAccessibilityPanel" (close)="showAccessibilityPanel = false"></lib-access-panel>
 
 <div style="margin: 25px;padding: 0px 30px;">
   <!-- Charts implementation example -->
-  <app-chart> </app-chart>
-  <lib-table ></lib-table>
+  <!-- <app-chart> </app-chart>
+  <lib-table ></lib-table> -->
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fstock-photos%2Fnature-and-landscapes&psig=AOvVaw34o3G647hzfs-iic4srUSL&ust=1760511565765000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDD2eWOo5ADFQAAAAAdAAAAABAE" alt="Random Image">
+  <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fstock-photos%2Fnature-and-landscapes&psig=AOvVaw34o3G647hzfs-iic4srUSL&ust=1760511565765000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDD2eWOo5ADFQAAAAAdAAAAABAE" alt="Random Image">
   <!-- languageTranslate pipe implementation example-->
   <div style="margin: 30px 0px;">{{ message | languageTranslate:language }}</div>
   <!-- Dynamic form implementation example -->
   <dynamic-form [formJson]="data" [language]="language" #formLib></dynamic-form>
   <button (click)="submitData()" [disabled]="this.formLib?.myForm?.invalid" mat-raised-button style="margin: 30px 0px;">SUBMIT</button>
+
+  
 </div>
